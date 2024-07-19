@@ -7,9 +7,7 @@
   env = {};
   idx = {
     # Search for the extensions you want on https://open-vsx.org/ and use "publisher.id"
-    extensions = [
-      "alphabotsec.vscode-eclipse-keybindings"
-    ];
+    extensions = [];
     workspace = {
       onCreate = {
         commands = ''
