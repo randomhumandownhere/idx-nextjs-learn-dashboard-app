@@ -1,0 +1,1 @@
+# idx-nextjs-learn-dashboard-app
