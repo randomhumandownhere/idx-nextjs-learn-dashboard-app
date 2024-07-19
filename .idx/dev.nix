@@ -12,10 +12,11 @@
     ];
     workspace = {
       onCreate = {
-        commands = "npx --yes create-next-app@latest nextjs-dashboard --example \"https://github.com/vercel/next-learn/tree/main/dashboard/starter-example\" --use-pnpm | cd nextjs-dashboard | pnpm i";
-      };
-      onStart = {
-        cd-dashboard = "cd nextjs-dashboard";
+        commands = ''
+          chmod +x .idx/onCreate.sh
+          .idx/onCreate.sh
+        '';
+        default.openFiles = ["app/page.tsx"];
       };
     };
     previews = {
